@@ -1,27 +1,28 @@
 <div align="center">
-	<h2> Miku-Chan </h2>
+	<h2> Lavender </h2>
 	<p>	
     <a class="badge-align" href="https://www.codacy.com/app/Incrested/Miku-Chan?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Miku-Chan-Devs/Miku-Chan&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/8d6c96634d3e4bc4b5bb0933ce383d46"/></a><a class="badge" href="http://david-dm.org/miku-chan-devs/miku-chan" data-reactid="26"><img src="http://david-dm.org/miku-chan-devs/miku-chan/status.svg" alt="dependencies status" data-reactid="27"></a><a href="https://circleci.com/gh/Miku-Chan-Devs"><img src="https://img.shields.io/circleci/project/github/Miku-Chan-Devs/Miku-Chan.svg" /></a><a href="https://travis-ci.org/Miku-Chan-Devs/Miku-Chan"><img src="https://travis-ci.org/Miku-Chan-Devs/Miku-Chan.svg?branch=master" /></a><a href="https://mikuchan.me"><img src="https://img.shields.io/github/downloads/Miku-Chan-Devs/Miku-Chan/total.svg" /></a><a href="https://discord.gg/MaK7BtW"><img src="https://discordapp.com/api/guilds/366247860502659084/embed.png" alt="Discord server" /></a>
 	</p>
 </div>
 
-Miku Chan is a lightweight Discord bot based off of JavaScript, made to increase the speed of your workflow and maximize autonomy. By using the power of The Clean Web and other sponsors, we're able to deliver a fast and brilliant experience to all.
+Lavender is a Discord.JS-based bot that allows 3 things: easy moderation, boat-loads of fun, and lightweight self-deployment.
 
-### Invitation
-There are two ways to invite our bot to your Discord server:
-> Use the link [here](https://discordapp.com/oauth2/authorize?client_id=365649918142054410&permissions=2146958583&redirect_uri=https%3A%2F%2Fmikuchan.me%2Fthanks.html&scope=bot) to visit the Discord Official Registration
+Features to Come:
+> See [Issues](https://github.com/KnoxDevTeam/Lavender/issues)
 
-or
+# Building
+Building Lavender is super simple. Open a terminal with Node.JS and NPM installed and simply do:
+```
+npm install
+```
+Afterwards, take the config.ex.json and edit it to your likings. You will need to make a Discord bot using the Discord Developer panel and put the token in the config file. After that, simply run the following command and you're good to go:
+```
+npm start
+```
 
-> Visit our site (coming soon) to have a custom experience (server registration, custom commands, etc.)
+# Licensing and Accrediations
+Lavender couldn't have been done without support for roughly 1 year now. The head developers, and current developers, are Matt ([@Incrested](https://github.com/Incrested)) and Lucas([@Ultra03](https://github.com/Ultra03)).
 
-### Support
-There are two support methods:
-> Use the link [here](https://discord.gg/MaK7BtW) to join Miku's Cave on Discord and ask the [@]Helpers for help in [#]support.
+The Lavender code is licensed under GNU General Public License v3 and developed in full by Matt and Lucas.
 
-or
-
-> Visit our Issues page [here](https://github.com/Incrested/Miku-Chan/issues/new) to post an issue for us to fix and resolve ASAP.
-
-### License
-Miku-Chan is licensed under GNU General Public License (Version 3). Please make sure you are using the application under its code of conduct.
+The Lavender logo, banner, and other graphics are property of Knox, Corp. &copy; 2018 Knox, Corp. Some rights reserved.
