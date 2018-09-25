@@ -1,24 +1,13 @@
-lnaguage: node_js
-script: 
-node_js:
-  - node
-cache:
-  directories:
-    - node_modules
-notifications:
-  email:
-    on_success: always
-    on_failure: always
+language: node_js
+sudo: enabled
 before_install:
-  - 'sudo apt-get update'
-  - 'sudo apt-get upgrade'
-  - 'npm update'
-  - 'npm i -g npm && npm i --save'
+- sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/0.33.11/install.sh | bash
+- command -v nvm
+- sudo nvm install node
+- sudo npm install -g npm
 install:
-  - 'sudo npm install'
-  - 'npm install -g codecov'
-script: 
-  - 'npm test'
-  - 'codecov'
-dist: trusty
-sudo: required
+- npm install
+script:
+- npm test
+deploy:
+  skip_cleanup: true
