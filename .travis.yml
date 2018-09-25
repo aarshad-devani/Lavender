@@ -2,7 +2,7 @@ language: node_js
 sudo: enabled
 before_install:
 - command -v nvm
-- sudo npm install -g npm
+- npm install -g npm
 install:
 - npm install
 script:
