@@ -1,6 +1,4 @@
 language: node_js
-node_js:
- - "node"
 sudo: enabled
 before_install:
 - command -v nvm
