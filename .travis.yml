@@ -1,7 +1,6 @@
 language: node_js
 sudo: enabled
 before_install:
-- sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/0.33.11/install.sh | bash
 - command -v nvm
 - sudo nvm install node
 - sudo npm install -g npm
