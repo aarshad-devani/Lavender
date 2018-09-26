@@ -1,5 +1,0 @@
-discord.js
-opusscript
-ytdl-core
-ffmpeg-binaries
-node-opus
