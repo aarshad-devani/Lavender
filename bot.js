@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const gd = require("node-gd");
 const fs = require("fs");
 const yt = require("ytdl-core");
 const config = require("./config.json");
