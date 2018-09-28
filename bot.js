@@ -28,7 +28,7 @@ client.on('msg', msg => {
 			},
 			title: "Miku-Chan - Help",
 			url: "http://github.com/Miku-Chan-Devs/Miku-Chan/wiki/Commands",
-			description: "Miku-Chan's commands are as follows. The prefix is \prefix + "\".",
+			description: `Miku-Chan's commands are as follows. The prefix is ${config.prefix}.`,
 			fields: [
 			{
 				name: prefix + "8ball",
