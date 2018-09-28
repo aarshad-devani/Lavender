@@ -6,14 +6,15 @@
   "main": "bot.js",
   "dependencies": {
    "erlpack": "discordapp/erlpack",
-   "opusscript": "0.0.6",
-   "sodium": "2.0.3",
-   "libsodium-wrappers": "0.7.3",
-   "uws": "99.0.0",
+   "opusscript": "^0.0.6",
+   "sodium": "^2.0.3",
+   "libsodium-wrappers": "^0.7.3",
+   "uws": "^99.0.0",
    "ytdl-core" :  "github:fent/node-ytdl-core#master",
-   "ffmpeg-binaries": "4.0.0",
-   "node-opus": "0.3.0",
-   "discord.js": "11.4.2"
+   "ffmpeg-binaries": "^4.0.0",
+   "node-opus": "^0.3.0",
+   "discord.js": "^11.4.2",
+   "node-gyp": "^3.8.0"
   },
   "scripts": {
     "start": "node bot.js",
