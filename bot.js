@@ -307,7 +307,7 @@ client.on('msg', msg => {
 		});
   }
   if(msg == prefix + "crypto btc") {
-	  var tokenURL = 'https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=USD';
+	  var tokenURL = 'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD';
 	  https.get(tokenURL, function (res) {
              var body = '';
              res.on('data', function (chunk) {
@@ -316,8 +316,8 @@ client.on('msg', msg => {
              res.on('end', function () {
                  var priceResponse = JSON.parse(body);
                  console.log("Got a response: ", priceResponse);
-                 var pricePart = priceResponse.price_usd;
-	  						msg.channel.send("The price of Bitcoin (BTC) is " + pricePart + "$ per coin")
+                 var pricePart = priceResponse.USD;
+		 msg.channel.send("The price of Bitcoin (BTC) is " + pricePart + "$ per coin")
                  console.log("Set Price: ", pricePart);
              });
          }).on('error', (e) => {
@@ -325,7 +325,7 @@ client.on('msg', msg => {
 	  });
   }
   if(msg == prefix + "crypto eth") {
-	  var tokenURL = 'https://api.coinmarketcap.com/v1/ticker/ethereum/?convert=USD';
+	  var tokenURL = 'https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD';
 	  https.get(tokenURL, function (res) {
              var body = '';
              res.on('data', function (chunk) {
@@ -334,8 +334,8 @@ client.on('msg', msg => {
              res.on('end', function () {
                  var priceResponse = JSON.parse(body);
                  console.log("Got a response: ", priceResponse);
-                 var pricePart = priceResponse.price_usd;
-	  						msg.channel.send("The price of Ethereum (ETH) is " + pricePart + "$ per coin")
+                 var pricePart = priceResponse.USD;
+	  	 msg.channel.send("The price of Ethereum (ETH) is " + pricePart + "$ per coin")
                  console.log("Set Price: ", pricePart);
              });
          }).on('error', (e) => {
@@ -343,7 +343,7 @@ client.on('msg', msg => {
 	  });
   }
   if(msg == prefix + "crypto ltc") {
-	  var tokenURL = 'https://api.coinmarketcap.com/v1/ticker/litecoin/?convert=USD';
+	  var tokenURL = 'https://min-api.cryptocompare.com/data/price?fsym=LTC&tsyms=USD';
 	  https.get(tokenURL, function (res) {
              var body = '';
              res.on('data', function (chunk) {
@@ -352,8 +352,8 @@ client.on('msg', msg => {
              res.on('end', function () {
                  var priceResponse = JSON.parse(body);
                  console.log("Got a response: ", priceResponse);
-                 var pricePart = priceResponse.price_usd;
-	  						msg.channel.send("The price of Litecoin (LTC) is " + pricePart + "$ per coin")
+                 var pricePart = priceResponse.USD;
+	  	 msg.channel.send("The price of Litecoin (LTC) is " + pricePart + "$ per coin")
                  console.log("Set Price: ", pricePart);
              });
          }).on('error', (e) => {
@@ -361,7 +361,7 @@ client.on('msg', msg => {
 	  });
    }
    if(msg == prefix + "crypto bch") {
-	  var tokenURL = 'https://api.coinmarketcap.com/v1/ticker/bitcoin-cash/?convert=USD';
+	  var tokenURL = 'https://min-api.cryptocompare.com/data/price?fsym=BCH&tsyms=USD';
 	  https.get(tokenURL, function (res) {
              var body = '';
              res.on('data', function (chunk) {
@@ -370,8 +370,8 @@ client.on('msg', msg => {
              res.on('end', function () {
                  var priceResponse = JSON.parse(body);
                  console.log("Got a response: ", priceResponse);
-                 var pricePart = priceResponse.price_usd;
-	  						msg.channel.send("The price of Bitcoin Cash (BCH) is " + pricePart + "$ per coin")
+                 var pricePart = priceResponse.USD;
+	    	 msg.channel.send("The price of Bitcoin Cash (BCH) is " + pricePart + "$ per coin")
                  console.log("Set Price: ", pricePart);
              });
          }).on('error', (e) => {
@@ -379,7 +379,7 @@ client.on('msg', msg => {
 	  });
    }
    if(msg == prefix + "crypto xrp") {
-	  var tokenURL = 'https://api.coinmarketcap.com/v1/ticker/ripple/?convert=USD';
+	  var tokenURL = 'https://min-api.cryptocompare.com/data/price?fsym=XRP&tsyms=USD';
 	  https.get(tokenURL, function (res) {
              var body = '';
              res.on('data', function (chunk) {
@@ -388,8 +388,8 @@ client.on('msg', msg => {
              res.on('end', function () {
                  var priceResponse = JSON.parse(body);
                  console.log("Got a response: ", priceResponse);
-                 var pricePart = priceResponse.price_usd;
-	  			 msg.channel.send("The price of Ripple (XRP) is " + pricePart + "$ per coin")
+                 var pricePart = priceResponse.USD;
+	  	 msg.channel.send("The price of Ripple (XRP) is " + pricePart + "$ per coin")
                  console.log("Set Price: ", pricePart);
              });
          }).on('error', (e) => {
