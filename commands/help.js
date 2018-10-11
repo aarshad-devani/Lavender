@@ -1,3 +1,4 @@
+const config = require('../config.json')
 exports.run = (client, message, args) => {
     message.channel.send({embed: {
         color: 3447003,
@@ -7,7 +8,7 @@ exports.run = (client, message, args) => {
         },
         title: "Miku-Chan - Help",
         url: "http://github.com/Miku-Chan-Devs/Miku-Chan/wiki/Commands",
-        description: `Miku-Chan's commands are as follows. The "" + config.prefix + is ${config.prefix}.`,
+        description: `Miku-Chan's commands are as follows. The command prefix is ${config.prefix}.`,
         fields: [
         {
             name: "" + config.prefix + "8ball",

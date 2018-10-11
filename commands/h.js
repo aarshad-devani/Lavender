@@ -1,3 +1,4 @@
 exports.run = (client, message, args) => {
-    help();
+  let commandFile = require('./help.js')
+  commandFile.run(client, message, args);
 }

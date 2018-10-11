@@ -17,8 +17,8 @@ fs.readdir("./events/", (err, files) => {
 client.on("message", message => {
 	if(message.author.bot) return;
 	if(message.content.indexOf(config.prefix) !== 0) return;
-	const args = message.content.slice(config.prefix.length).trim().split(/ + /g);
-	const command = args.shift().toLowerCase();
+	const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+	const command = args[0].toLowerCase();
 	try {
 		let commandFile = require(`./commands/${command}.js`);
 		commandFile.run(client, message, args, https, ytdl);
