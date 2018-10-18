@@ -8,7 +8,7 @@ exports.run = (client, message, args, ytdl) => {
     voiceChannel.join().then(connection => {
         const stream = ytdl(url, {filter: 'audioonly'});
         const dispatcher = connection.playStream(stream);
-        dispatcher.on('end', () => {
+        dispatcher.on("end", () => {
             voiceChannel.leave();
         });
     });

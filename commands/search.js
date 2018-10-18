@@ -2,7 +2,7 @@ exports.run = (client, message, args) => {
     let query = args[0];
     message.channel.send({embed: {
         color: 3447003,
-        title: "Your Google Search for " + args.toString().replace(/,/g, '+'),
+        title: "Your Google Search for " + args.toString().replace(/,/g, "+"),
         description: "Look at your Search Query via DuckDuckGo",
         timestamp: new Date(),
         footer: {

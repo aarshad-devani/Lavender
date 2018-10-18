@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
 				m.edit("(╯°□°)╯    ]").then(ms => {
 					setTimeout(() => {
 						ms.edit("(°-°)\\ ┬─┬")
-					}, 500)
+					}, 500);
 				});
 			}, 500);
 		});

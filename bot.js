@@ -3,10 +3,12 @@ const fs = require("fs");
 const ytdl = require("ytdl-core");
 const config = require("./config.json");
 const client = new Discord.Client();
-const https = require('https');
+const https = require("https");
 
 fs.readdir("./events/", (err, files) => {
-	if(err) return console.error(err);
+	if(err) {
+		console.error(err);
+	}
 	files.forEach(file => {
 		let eventFunction = require(`./events/${file}`);
 		let eventName = file.split(".")[0];
@@ -15,8 +17,12 @@ fs.readdir("./events/", (err, files) => {
 });
 
 client.on("message", message => {
-	if(message.author.bot) return;
-	if(message.content.indexOf(config.prefix) !== 0) return;
+	if(message.author.bot) {
+		return;
+	}
+	if(message.content.indexOf(config.prefix) !== 0) {
+		return;
+	}
 	const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
 	const command = args[0].toLowerCase();
 	try {
