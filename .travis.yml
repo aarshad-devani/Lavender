@@ -3,9 +3,9 @@ sudo: enabled
 before_install:
 - command -v nvm
 install:
-- apt-get install libtool
-- apt-get install automake
-- apt-get install autoconf
+- sudo apt-get install libtool
+- sudo apt-get install automake
+- sudo apt-get install autoconf
 - npm install
 script:
 - npm test
