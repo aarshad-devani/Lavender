@@ -3,7 +3,8 @@ const fs = require("fs");
 const ytdl = require("ytdl-core");
 const config = require("./config.json");
 const client = new Discord.Client();
-const https = require("https");
+const https = require('https');
+client.commands = new Discord.Collection();
 
 fs.readdir("./events/", (err, files) => {
 	if(err) {
@@ -16,21 +17,34 @@ fs.readdir("./events/", (err, files) => {
 	});
 });
 
+fs.readdir("./commands/", (err, files) => {
+	if(err) return console.error(err);
+
+	let jsfile = files.filter(f => f.split(".").pop() === "js");
+	if(jsfile.length <= 0) {
+		console.log("No commands found!");
+		return;
+	}
+
+	jsfile.forEach((f, i) => {
+		let props = require(`./commands/${f}`);
+		client.commands.set(props.help.name, props);
+		console.log(`${f} was loaded!`);
+	});
+
+});
+
 client.on("message", message => {
-	if(message.author.bot) {
-		return;
-	}
-	if(message.content.indexOf(config.prefix) !== 0) {
-		return;
-	}
-	const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-	const command = args[0].toLowerCase();
-	try {
-		let commandFile = require(`./commands/${command}.js`);
-		commandFile.run(client, message, args, https, ytdl);
-	} catch (err) {
-		console.error(err);
-	}
+	if(message.author.bot) return;
+
+	let prefix = (config.prefix);
+	let messageArray = message.content.split(/ +/g);
+	let cmd = messageArray[0];
+	let args = messageArray.slice(1);
+
+	let commandFile = client.commands.get(cmd.slice(prefix.length));
+	if(commandFile) commandFile.run(client, message, args, https, ytdl);
+
 });
 
 client.login(config.token);

@@ -1,4 +1,4 @@
-exports.run = (client, message, args) => {
+module.exports.run = (client, message, args) => {
 		message.channel.send("(°-°)\\ ┬─┬").then(m => {
 			setTimeout(() => {
 				m.edit("(╯°□°)╯    ]").then(ms => {
@@ -8,4 +8,8 @@ exports.run = (client, message, args) => {
 				});
 			}, 500);
 		});
+}
+
+module.exports.help = {
+	name: "tf"
 }
