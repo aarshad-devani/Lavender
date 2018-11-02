@@ -1,37 +1,34 @@
 {
-  "name": "lavender",
-  "version": "1.2.0",
-  "license": "GPL-3.0-or-later",
-  "description": "A JavaScript-Based Discord Bot Made to Increase your Workflow and Autonomy",
-  "main": "bot.js",
-  "dependencies": {
-    "discord.js": "^11.4.2",
-    "enmap": "^4.3.2",
-    "erlpack": "discordapp/erlpack",
-    "ffmpeg-binaries": "^4.0.0",
-    "libsodium-wrappers": "^0.7.3",
-    "node-gyp": "^3.8.0",
-    "node-opus": "^0.3.0",
-    "opusscript": "^0.0.6",
-    "sodium": "^2.0.3",
-    "uws": "^99.0.0",
-    "ytdl-core": "github:fent/node-ytdl-core#master"
-  },
-  "scripts": {
-    "start": "node bot.js",
-    "test": "node bot.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KnoxDevTeam/Lavender.git"
-  },
-  "author": "Incrested & Ultra03; Knox, Corp.",
-  "bugs": {
-    "url": "https://github.com/KnoxDevTeam/Lavender/issues"
-  },
-  "homepage": "https://lavender.knoxcorp.me",
-  "engines": {
-    "node": "6.11.4",
-    "npm": "5.7.1"
-  }
+	"name": "lavender",
+	"version": "1.2.0",
+	"license": "GPL-3.0-or-later",
+	"description": "A JavaScript-Based Discord Bot Made to Increase your Workflow and Autonomy",
+	"main": "bot.js",
+	"dependencies": {
+		"erlpack": "discordapp/erlpack",
+		"opusscript": "^0.0.6",
+		"uws": "^99.0.0",
+		"ytdl-core": "github:fent/node-ytdl-core#master",
+		"ffmpeg-binaries": "^4.0.0",
+		"node-opus": "^0.3.0",
+		"discord.js": "^11.4.2",
+		"node-gyp": "^3.8.0"
+	},
+	"scripts": {
+		"start": "node bot.js",
+		"test": "node bot.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/KnoxDevTeam/Lavender.git"
+	},
+	"author": "Incrested & Ultra03",
+	"bugs": {
+		"url": "https://github.com/KnoxDevTeam/Lavender/issues"
+	},
+	"homepage": "https://lavender.knoxcorp.me",
+	"engines": {
+		"node": "8.11.4",
+		"npm": "5.7.1"
+	}
 }

@@ -1,5 +1,5 @@
-const config = require("../config.json");
-exports.run = (client, message, args) => {
+const config = require('../config.json');
+module.exports.run = (client, message, args) => {
     message.channel.send({embed: {
         color: 3447003,
         author: {
@@ -72,4 +72,8 @@ exports.run = (client, message, args) => {
             text: "Use those Commands Now"
         }
     }});
+}
+
+module.exports.help = {
+  name: "help"
 }

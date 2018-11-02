@@ -1,4 +1,4 @@
-exports.run = (client, message, args) => {
+module.exports.run = (client, message, args) => {
     let query = args[0];
     message.channel.send({embed: {
         color: 3447003,
@@ -10,4 +10,8 @@ exports.run = (client, message, args) => {
             text: "Powered by DuckDuckGo"
         }
     }});
+}
+
+module.exports.help = {
+  name: "search"
 }

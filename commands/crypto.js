@@ -1,4 +1,4 @@
-exports.run = (client, message, args, https) => {
+module.exports.run = (client, message, args, https) => {
     let currency = args[0];
     switch (currency) {
         case "grlc":
@@ -71,11 +71,12 @@ exports.run = (client, message, args, https) => {
                    console.error(e);
             });
             break;
-        case "bch": 
-            https.get("https://min-api.cryptocompare.com/data/price?fsym=BCH&tsyms=USD", function (res) {
-                   var body = "";
-                   res.on("data", function (chunk) {
-                    body += chunk;
+        case "bch":
+            var tokenURL = 'https://min-api.cryptocompare.com/data/price?fsym=BCH&tsyms=USD';
+            https.get(tokenURL, function (res) {
+                   var body = '';
+                   res.on('data', function (chunk) {
+                       body += chunk;
                    });
                    res.on("end", function () {
                     var priceResponse = JSON.parse(body);
@@ -106,4 +107,8 @@ exports.run = (client, message, args, https) => {
             });
             break;
     }
+}
+
+module.exports.help = {
+  name: "crypto"
 }

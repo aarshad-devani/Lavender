@@ -1,4 +1,4 @@
-exports.run = (client, message, args, ytdl) => {
+module.exports.run = (client, message, args, ytdl) => {
     console.log("Got a song request!");
     const voiceChannel = message.member.voiceChannel;
     const url = args[0];
@@ -12,4 +12,8 @@ exports.run = (client, message, args, ytdl) => {
             voiceChannel.leave();
         });
     });
+}
+
+module.exports.help = {
+  name: "play"
 }
