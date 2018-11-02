@@ -1,7 +1,6 @@
 environment:
   nodejs_version: "8"
 install:
-  - npm install --global windows-build-tools
   - npm install
 test_script:
   - node --version
