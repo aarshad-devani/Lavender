@@ -1,6 +1,6 @@
 {
-  "name": "Miku-Chan",
-  "version": "1.1.1",
+  "name": "lavender",
+  "version": "1.2.0",
   "license": "GPL-3.0-or-later",
   "description": "A JavaScript-Based Discord Bot Made to Increase your Workflow and Autonomy",
   "main": "bot.js",
@@ -23,13 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Incrested/Miku-Chan.git"
+    "url": "git+https://github.com/KnoxDevTeam/Lavender.git"
   },
-  "author": "Incrested & Ultra03",
+  "author": "Incrested & Ultra03; Knox, Corp.",
   "bugs": {
-    "url": "https://github.com/Incrested/Miku-Chan/issues"
+    "url": "https://github.com/KnoxDevTeam/Lavender/issues"
   },
-  "homepage": "https://github.com/Incrested/Miku-Chan",
+  "homepage": "https://lavender.knoxcorp.me",
   "engines": {
     "node": "6.11.4",
     "npm": "5.7.1"
