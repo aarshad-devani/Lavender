@@ -1,6 +1,6 @@
 {
 	"name": "Lavender",
-	"version": "1.2",
+	"version": "1.2.0",
 	"license": "GPL-3.0-or-later",
 	"description": "A JavaScript-Based Discord Bot Made to Increase your Workflow and Autonomy",
 	"main": "bot.js",
