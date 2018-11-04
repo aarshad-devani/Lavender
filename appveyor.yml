@@ -1,6 +1,5 @@
 image: ubuntu
-environment:
-  nodejs_version: "8"
+stack: node 8
 install:
   - node --version
   - npm --version
