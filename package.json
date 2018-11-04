@@ -16,7 +16,7 @@
 	},
 	"scripts": {
 		"start": "node bot.js",
-		"test": "node bot.js"
+		"test": "echo At this point, the build has succeded and the bot should've been tested, and we don't want to run the bot from the CI."
 	},
 	"repository": {
 		"type": "git",
