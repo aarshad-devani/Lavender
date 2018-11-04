@@ -1,6 +1,25 @@
 const https = require('https');
 module.exports.run = (client, message, args) => {
     let currency = args[0];
+    function doIt(curS) {
+        var cur = curS.toUpperCase();
+        https.get("https://min-api.cryptocompare.com/data/price?fsym=" + cur +"&tsyms=USD", function (res) {
+            var body = "";
+            res.on("data", function(chunk) {
+                body += chunk;
+            });
+            res.on("end", function() {
+                var priceResponse = JSON.parse(body);
+                var pricePart = priceResponse.price_usd;
+                pricePart = parseInt(pricePart*100)/100.0;
+                price = pricePart + "$ USD";
+                message.channel.send("The price of " + cur + " is " + price +" per coin");
+            });
+        }).on("error", (e) => {
+            message.channel.send("It appears we can't fetch the price of " + cur + ". Try again later.");
+        });
+    }
+    /*  The Above Will Be Used.. soon™ */
     switch (currency) {
         case "grlc":
 		    https.get("https://cryptocoincharts.info/fast/secret-api/pricing.php?coin=grlc&apiKey=djde93dekd94jwowqpjfngn", function (res) {
