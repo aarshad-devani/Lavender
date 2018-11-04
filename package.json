@@ -5,14 +5,15 @@
 	"description": "A JavaScript-Based Discord Bot Made to Increase your Workflow and Autonomy",
 	"main": "bot.js",
 	"dependencies": {
-		"erlpack": "discordapp/erlpack",
-		"opusscript": "^0.0.6",
-		"uws": "^99.0.0",
-		"ytdl-core": "github:fent/node-ytdl-core#master",
-		"ffmpeg-binaries": "^4.0.0",
-		"node-opus": "^0.3.0",
 		"discord.js": "^11.4.2",
-		"node-gyp": "^3.8.0"
+		"erlpack": "discordapp/erlpack",
+		"ffmpeg-binaries": "^4.0.0",
+		"node-gyp": "^3.8.0",
+		"node-opus": "^0.3.0",
+		"opusscript": "^0.0.6",
+		"soundcloud": "^3.3.0",
+		"uws": "^99.0.0",
+		"ytdl-core": "github:fent/node-ytdl-core#master"
 	},
 	"scripts": {
 		"start": "node bot.js",
