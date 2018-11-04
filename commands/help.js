@@ -6,17 +6,17 @@ module.exports.run = (client, message, args) => {
             name: client.user.username,
             icon_url: client.user.avatartURl
         },
-        title: "Miku-Chan - Help",
-        url: "http://github.com/Miku-Chan-Devs/Miku-Chan/wiki/Commands",
-        description: `Miku-Chan's commands are as follows. The command prefix is ${config.prefix}.`,
+        title: "Lavender - Commands",
+        url: "https://docs.knoxcorp.me/lavender/",
+        description: `Lavender's commands are as follows. The command prefix is ${config.prefix}.`,
         fields: [
         {
             name: "" + config.prefix + "8ball",
             value: "It's an 8ball..."
         },
         {
-            name: "" + config.prefix + "help, m!h, m!cmds",
-            value: "See the commands that Miku-Chan understands"
+            name: "" + config.prefix + "help," + config.prefix + "h, " + config.prefix + "cmds",
+            value: "See the commands that Lavender understands"
         },
         {
             name: "" + config.prefix + "icup",
@@ -24,7 +24,7 @@ module.exports.run = (client, message, args) => {
         },
         {
             name: "" + config.prefix + "about",
-            value: "Learn about Miku-Chan"
+            value: "Learn about Lavender"
         },
         {
             name: "" + config.prefix + "google",
@@ -40,7 +40,7 @@ module.exports.run = (client, message, args) => {
         },
         {
             name: "" + config.prefix + "botisdead",
-            value: "Get a Link to the Miku-Chan status page"
+            value: "Get a Link to the Lavender status page"
         },
         {
             name: "" + config.prefix + "ping, m!ding",

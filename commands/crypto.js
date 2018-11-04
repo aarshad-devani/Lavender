@@ -1,4 +1,5 @@
-module.exports.run = (client, message, args, https) => {
+const https = require('https');
+module.exports.run = (client, message, args) => {
     let currency = args[0];
     switch (currency) {
         case "grlc":

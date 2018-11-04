@@ -1,9 +1,7 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-const ytdl = require("ytdl-core");
 const config = require("./config.json");
 const client = new Discord.Client();
-const https = require('https');
 client.commands = new Discord.Collection();
 
 fs.readdir("./events/", (err, files) => {
@@ -43,7 +41,7 @@ client.on("message", message => {
 	let args = messageArray.slice(1);
 
 	let commandFile = client.commands.get(cmd.slice(prefix.length));
-	if(commandFile) commandFile.run(client, message, args, https, ytdl);
+	if(commandFile) commandFile.run(client, message, args);
 
 });
 
