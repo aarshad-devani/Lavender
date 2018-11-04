@@ -9,6 +9,7 @@ install:
 - sudo apt-get install automake
 - sudo apt-get install autoconf
 - npm install
+- cd /home/travis/build/KnoxDevTeam/Lavender
 script:
 - npm test
 deploy:
