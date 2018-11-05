@@ -1,5 +1,5 @@
 const config = require('../config.json');
-module.exports.run = (client, message, args) => {
+module.exports.run = (client, message) => {
     message.channel.send({embed: {
         color: 3447003,
         author: {
