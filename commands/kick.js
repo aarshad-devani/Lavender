@@ -1,6 +1,7 @@
-module.exports.run = (client, message, args) => {
+module.exports = {
+  run: function (client, message, args) {
     const modRole = message.guild.roles.find("name", "Moderators");
-    if(!modRole) {
+    if (!modRole) {
       console.log("The moderator role does not exist on a server when kick.js was executed");
     }
     if (!message.member.roles.has(modRole.id)) {
@@ -15,8 +16,9 @@ module.exports.run = (client, message, args) => {
     let member = message.mentions.members.first();
     let reason = args.slice(1).join(" ");
     member.kick(reason);
-}
+  },
 
-module.exports.help = {
-  name: "kick"
+  help: {
+    name: "kick"
+  }
 }

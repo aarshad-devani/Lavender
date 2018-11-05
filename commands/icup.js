@@ -1,7 +1,9 @@
-module.exports.run = (client, message, args) => {
+module.exports = {
+  run: function (client, message, args) {
     message.channel.send('Ha ha. Very funny. ***(not)***');
-}
+  },
 
-module.exports.help = {
-  name: "icup"
+  help: {
+    name: "icup"
+  }
 }
