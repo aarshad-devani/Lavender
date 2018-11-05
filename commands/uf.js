@@ -1,4 +1,5 @@
-module.exports.run = (client, message, args) => {
+module.exports = {
+	run: function (client, message, args) {
 		message.channel.send("(╯°□°)╯  ︵  ┻━┻").then(m => {
 			setTimeout(() => {
 				m.edit("(╯°□°)╯    ]").then(ms => {
@@ -8,8 +9,9 @@ module.exports.run = (client, message, args) => {
 				});
 			}, 500);
 		});
-}
+	},
 
-module.exports.help = {
-	name: "uf"
+	help: {
+		name: "uf"
+	}
 }
