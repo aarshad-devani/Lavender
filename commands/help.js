@@ -37,7 +37,7 @@ module.exports = {
                         value: "Search the Pocket Monster Directory"
                     },
                     {
-                        name: "" + config.prefix + "tf, m!uf",
+                        name: "" + config.prefix + "tf," + config.prefix + "uf",
                         value: "Animate a tableflip and un-flipping a table"
                     },
                     {
@@ -45,7 +45,7 @@ module.exports = {
                         value: "Get a Link to the Lavender status page"
                     },
                     {
-                        name: "" + config.prefix + "ping, m!ding",
+                        name: "" + config.prefix + "ping," + config.prefix + "ding",
                         value: "Get your ping, or just ding"
                     },
                     {
