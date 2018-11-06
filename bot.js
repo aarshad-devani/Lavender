@@ -34,7 +34,7 @@ fs.readdir("./commands/", (err, files) => {
 
 client.on("message", message => {
 	if(message.author.bot) return;
-
+	if(!message.content.startsWith('+')) return;
 	let prefix = (config.prefix);
 	let messageArray = message.content.split(/ +/g);
 	let cmd = messageArray[0];
