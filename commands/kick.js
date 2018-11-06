@@ -1,11 +1,7 @@
 module.exports = {
   run: function (client, message, args) {
-    const modRole = message.guild.roles.find("name", "Moderators");
-    if (!modRole) {
-      console.log("The moderator role does not exist on a server when kick.js was executed");
-    }
-    if (!message.member.roles.has(modRole.id)) {
-      message.reply("You can't use this command.");
+    if (!message.member.hasPermission('KICK_MEMBERS')) {
+      message.reply("You don't have the permission **`KICK_MEMBERS`**.");
     }
     if (message.mentions.members.size === 0) {
       message.reply("Please mention a user to kick");

@@ -22,6 +22,9 @@ module.exports = {
         }
         /*  The Above Will Be Used.. soon™ */
         switch (currency) {
+            case "":
+                message.channel.send("Don't think I saw a crypto there, buddy. Try doing `+crypto <currency>`. Some examples to replace currency with are: `btc`, `ltc`, `grlc`, `eth`, `bch`, and `xrp`.");
+                break;
             case "grlc":
                 https.get("https://cryptocoincharts.info/fast/secret-api/pricing.php?coin=grlc&apiKey=djde93dekd94jwowqpjfngn", function (res) {
                     var body = "";
