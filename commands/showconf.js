@@ -1,3 +1,4 @@
+const guildConf = require('../serverConf/default.js');
 module.exports = {
     run: function(client, message, args) {
         let configProps = Object.keys(guildConf).map(prop => {

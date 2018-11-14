@@ -1,3 +1,4 @@
+const guildConf = require('../serverConf/default.js');
 module.exports = {
     run: function(client, message, args) {
         const adminRole = message.member.hasPermission('ADMINISTRATOR');
