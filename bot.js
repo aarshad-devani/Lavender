@@ -2,7 +2,23 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const config = require("./config.json");
 const client = new Discord.Client();
+const Enmap = require('enmap');
 client.commands = new Discord.Collection();
+
+client.settings = new Enmap({
+	name: "settings",
+	fetchAll: false,
+	autoFetch: true,
+	cloneLevel: 'deep'
+});
+
+const defaultSettings = {
+	prefix: "+",
+	modLogChannel: "mod-log",
+	welcomeChannel: "join-log",
+	welcomeMessage: "Say hello to {{user}}, everyone!"
+}
+
 
 fs.readdir("./events/", (err, files) => {
 	if(err) {
@@ -41,8 +57,8 @@ client.on("message", message => {
 	let args = messageArray.slice(1);
 
 	let commandFile = client.commands.get(cmd.slice(prefix.length));
-	if(commandFile) commandFile.run(client, message, args);
-
+	const guildConf = client.settings.ensure(message.guild.id, defaultSettings);
+	if(commandFile) commandFile.run(client, message, args, guildConf);
 });
 
 client.login(config.token);
