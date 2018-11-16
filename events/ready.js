@@ -14,9 +14,12 @@ exports.run = (client) => {
         }).catch(r => console.log('[divineddiscordbots.com] Failed POST'));
 
         snekfetch.post(`https://discordbotlist.com/api/bots/${client.user.id}/stats`, {
-            header: { Authorization: 'Bot ' + config.dbotsToken2 }
+            header: { Authorization: `Bot ${config.dbotsToken2}` }
         }).send({
-            guilds: client.guilds.size
+            shard_id: 0,
+            guilds: client.guilds.size,
+            users: client.users.size,
+            voice_connections: client.voiceConnections.size
         }).catch(r => console.log('[discordbotlist.com] Failed POST'));
         
         snekfetch.post(`https://discordbots.org/api/bots/${client.user.id}/stats`, {
@@ -24,5 +27,5 @@ exports.run = (client) => {
         }).send({
             server_count: client.guilds.size
         }).catch(r => console.log('[discordbots.org] Failed POST'));
-    })
+    }), 3600000);
 }
