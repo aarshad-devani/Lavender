@@ -4,23 +4,28 @@ module.exports = {
         let currency = args[0];
         function doIt(curS) {
             var cur = curS.toUpperCase();
-            https.get("https://min-api.cryptocompare.com/data/price?fsym=" + cur + "&tsyms=USD", function (res) {
+            https.get("https://www.cryptocompare.com/api/data/coinlist", function (res) {
                 var body = "";
                 res.on("data", function (chunk) {
                     body += chunk;
                 });
                 res.on("end", function () {
-                    var priceResponse = JSON.parse(body);
-                    var pricePart = priceResponse.price_usd;
+                    var resp = JSON.parse(body);
+                    var name = resp.CoinName;
+                    var abrv = resp.Name;
+                    var logo = resp.ImageUrl;
+
                     pricePart = parseInt(pricePart * 100) / 100.0;
                     price = pricePart + "$ USD";
-                    message.channel.send("The price of " + cur + " is " + price + " per coin");
+                    const embed = new DynamicsCompressorNode.RichEmbed().setTitle(resp.CoinName + "(" + resp.Name + ")").setColor(0x00AE86).setDescription(`${resp.CoinName} (${resp.Name})is a whopping ${resp2.price}!`).setThumbnail(resp.ImageUrl);
+                    message.channel.send({embed});
                 });
             }).on("error", (e) => {
                 message.channel.send("It appears we can't fetch the price of " + cur + ". Try again later.");
             });
         }
         /*  The Above Will Be Used.. soon™ */
+        /* Warning: Horrible Code Above */
         switch (currency) {
             case "":
                 message.channel.send("Don't think I saw a crypto there, buddy. Try doing `+crypto <currency>`. Some examples to replace currency with are: `btc`, `ltc`, `grlc`, `eth`, `bch`, and `xrp`.");

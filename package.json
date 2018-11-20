@@ -5,6 +5,7 @@
 	"description": "A JavaScript-Based Discord Bot Made to Increase your Workflow and Autonomy",
 	"main": "bot.js",
 	"dependencies": {
+		"dblapi.js": "^2.3.0",
 		"discord.js": "^11.4.2",
 		"erlpack": "discordapp/erlpack",
 		"ffmpeg-binaries": "^4.0.0",
