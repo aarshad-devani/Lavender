@@ -11,11 +11,10 @@ module.exports = {
         } else {
             m.edit(`**Tempbanning ${member.user.tag}...`, {embed: null});
         }
-        try {
-            member.ban({reason});
-        } catch (e) {
-            return m.edit("**Tempban failed. We'll get 'em next time**");
-        }
+        member.ban({reason}).catch(error => {
+            m.edit("**Tempban failed. We'll get 'em next time**");
+            return console.error(error);
+        });
         m.edit("**Tempban completed. Party Time!");
     }, help: {
         name: "tempban"
