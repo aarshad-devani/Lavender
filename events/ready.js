@@ -4,7 +4,7 @@ exports.run = (client) => {
     console.log("Logged in as Lavender");
     client.user.setActivity(`${config.prefix}help | ${client.guilds.size} servers`);
     console.log("Presence Changed Successfully.");
-    console.log("You are currently using version 1.1-rc. A fair warning that this is a development build and not meant for production. Use at your own \"risk\"");
+    console.log("You are currently using version 1.1.2-rc. A fair warning that this is a development build and not meant for production. Use at your own \"risk\"");
     console.log("-------");
     setInterval(() => {
         snekfetch.post(`https://divineddiscordbots.com/bots/${client.user.id}/stats`, {
