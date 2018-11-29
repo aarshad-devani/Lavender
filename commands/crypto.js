@@ -1,6 +1,9 @@
 const https = require('https');
 module.exports = {
     run: function (client, message, args) {
+        if(args.length <= 0) {
+            return message.channel.send("Whoops! You need to tell me which cryptocurrency you want to look up.");
+        }
         let currency = args[0];
         function doIt(curS) {
             var cur = curS.toUpperCase();
