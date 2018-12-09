@@ -8,10 +8,12 @@ install:
 - sudo apt-get install libtool
 - sudo apt-get install automake
 - sudo apt-get install autoconf
+- npm install -g codecov
 - npm install
 - cd /home/travis/build/KnoxDevTeam/Lavender
 script:
 - npm test
+- codecov
     
   
 after_success:
