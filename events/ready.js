@@ -1,7 +1,7 @@
 const config = require('../config.json');
 const snekfetch = require('snekfetch');
 const DBL = require("dblapi.js");
-exports.run = (client) => {
+module.exports.run = (client) => {
     const dbl = new DBL(config.dbotsToken1, client);
     console.log("Logged in as Lavender");
     client.user.setActivity(`${config.prefix}help | ${client.guilds.size} servers`);
