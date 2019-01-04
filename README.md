@@ -1,4 +1,4 @@
-![Lavender Banner](img/banner.png)
+![Lavender Banner](img/banner.jpg)
 (formerly Miku-Chan)
 <div align="center">
 	<p>	
