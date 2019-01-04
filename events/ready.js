@@ -1,7 +1,18 @@
 const config = require('../config.json');
 const snekfetch = require('snekfetch');
 const DBL = require("dblapi.js");
+
+const invites = {};
+
+const wait = require('util').promisify(setTimeout);
+
 module.exports.run = (client) => {
+    wait(1000);
+    client.guilds.forEach(g => {
+        g.fetchInvites().then(guildInvites => {
+            invites[g.id] = guildInvites;
+        });
+    });
     const dbl = new DBL(config.dbotsToken1, client);
     console.log("Logged in as Lavender");
     client.user.setActivity(`${config.prefix}help | ${client.guilds.size} servers`);
