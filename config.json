@@ -1,5 +1,4 @@
 {
-	"token": "${process.env.bot_key}",
 	"prefix": "+",
 	"passes": "1",
 	"dbotsToken3": "inserthere",
