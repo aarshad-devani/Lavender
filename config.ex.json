@@ -1,7 +1,8 @@
 {
-	"token": "insertyourtokenhere",
+	"token": "inserthere",
 	"prefix": "+",
 	"passes": "1",
+	"useDbots": false,
 	"dbotsToken3": "inserthere",
 	"dbotsToken2": "inserthere",
 	"dbotsToken1": "inserthere"
