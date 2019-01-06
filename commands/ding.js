@@ -6,4 +6,4 @@ module.exports = {
   help: {
     name: "ding"
   }
-}
+};

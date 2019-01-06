@@ -1,19 +1,21 @@
 module.exports = {
   run: function(client, message, args) {
-    if(!message.member.hasPermission('BAN_MEMBERS')) {
-      mesasge.reply("You don't have the permission **BAN_MEMBERS**");
+    if(!message.member.hasPermission("BAN_MEMBERS")) {
+      message.reply("You don't have the permission '**BAN_MEMBERS**'");
       return;
     }
-    if(message.mentions.members.size == 0) {
+    if(message.mentions.members.size === 0) {
       message.reply("Please mention a user to ban.");
       return;
     }
-    if(!message.guild.me.hasPermission('BAN_MEMBERS')) {
+    if(!message.guild.me.hasPermission("BAN_MEMBERS")) {
       message.reply("I don't have permission to ban members!");
       return;
     }
     let member = message.mentions.members.first();
-    if(!member.bannable) return message.reply("I can't kick that member! Do they have a higher role?");
+    if(!member.bannable) {
+      message.reply("I can't kick that member! Do they have a higher role?");
+    }
     let reason = args.slice(1).join(" ");
     let bannedName = member.user.username;
     let bannedDiscriminator = member.user.discriminator;
@@ -32,4 +34,4 @@ module.exports = {
   help: {
     name: "ban"
   }
-}
+};

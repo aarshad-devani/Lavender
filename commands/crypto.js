@@ -1,4 +1,4 @@
-const https = require('https');
+const https = require("https");
 module.exports = {
     run: function (client, message, args) {
         if(args.length <= 0) {
@@ -104,10 +104,10 @@ module.exports = {
                 });
                 break;
             case "bch":
-                var tokenURL = 'https://min-api.cryptocompare.com/data/price?fsym=BCH&tsyms=USD';
+                var tokenURL = "https://min-api.cryptocompare.com/data/price?fsym=BCH&tsyms=USD";
                 https.get(tokenURL, function (res) {
-                    var body = '';
-                    res.on('data', function (chunk) {
+                    var body = "";
+                    res.on("data", function (chunk) {
                         body += chunk;
                     });
                     res.on("end", function () {
@@ -144,4 +144,4 @@ module.exports = {
     help: {
         name: "crypto"
     }
-}
+};

@@ -4,7 +4,7 @@ module.exports = {
 			setTimeout(() => {
 				m.edit("(╯°□°)╯    ]").then(ms => {
 					setTimeout(() => {
-						ms.edit("(╯°□°)╯  ︵  ┻━┻")
+						ms.edit("(╯°□°)╯  ︵  ┻━┻");
 					}, 500);
 				});
 			}, 500);
@@ -14,4 +14,4 @@ module.exports = {
 	help: {
 		name: "tf"
 	}
-}
+};
