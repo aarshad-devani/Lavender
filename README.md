@@ -9,11 +9,11 @@
 Lavender is a Discord.JS-based bot that allows 3 things: easy moderation, boat-loads of fun, and lightweight self-deployment.
 
 # Table of Contents
-> [Key Features](#key_features)
+> [Key Features](#key-features)
 >
 > [Building and Installing](#whered-it-go)
 >
-> [Licensing and Accrediations](#licensing_and_accrediations)
+> [Licensing and Accrediations](#licensing-and-accrediations)
 >
 > [Footnotes](#footnotes)
 
