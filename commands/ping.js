@@ -6,5 +6,4 @@ module.exports = {
   help: {
     name: "ping"
   }
-}
-
+};

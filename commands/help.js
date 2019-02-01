@@ -1,4 +1,4 @@
-const config = require('../config.json');
+const config = require("../config.json");
 module.exports = {
     run: function (client, message, args) {
         message.channel.send({
@@ -80,4 +80,4 @@ module.exports = {
     help: {
         name: "help"
     }
-}
+};

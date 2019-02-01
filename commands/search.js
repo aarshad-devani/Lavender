@@ -4,7 +4,7 @@ module.exports = {
         message.channel.send({
             embed: {
                 color: 3447003,
-                title: "Your Google Search for " + args.toString().replace(/,/g, "+"),
+                title: "Your DuckDuckGo Search for " + args.toString().replace(/,/g, "+"),
                 description: "Look at your Search Query via DuckDuckGo",
                 timestamp: new Date(),
                 footer: {
@@ -18,4 +18,4 @@ module.exports = {
     help: {
         name: "search"
     }
-}
+};

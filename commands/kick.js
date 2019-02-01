@@ -1,6 +1,6 @@
 module.exports = {
   run: function (client, message, args) {
-    if (!message.member.hasPermission('KICK_MEMBERS')) {
+    if (!message.member.hasPermission("KICK_MEMBERS")) {
       message.reply("You don't have the permission **`KICK_MEMBERS`**.");
       return;
     }
@@ -13,7 +13,9 @@ module.exports = {
       return;
     }
     let member = message.mentions.members.first();
-    if (!member.kickable) return message.reply("I can't kick that member! Do they have a higher role?");
+    if (!member.kickable) {
+      message.reply("I can't kick that member! Do they have a higher role?");
+    }
     let reason = args.slice(1).join(" ");
     let kickedName = member.user.username;
     let kickedDiscriminator = member.user.discriminator;
@@ -32,4 +34,4 @@ module.exports = {
   help: {
     name: "kick"
   }
-}
+};

@@ -1,5 +1,5 @@
-const config = require('../config.json');
-const snekfetch = require('snekfetch');
+const config = require("../config.json");
+const snekfetch = require("snekfetch");
 const DBL = require("dblapi.js");
 const scheduler = require("node-schedule");
 
