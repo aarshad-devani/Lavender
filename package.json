@@ -15,7 +15,7 @@
 		"opusscript": "^0.0.6",
 		"soundcloud": "^3.3.0",
 		"uws": "^99.0.0",
-		"ytdl-core": "github:fent/node-ytdl-core#v0.28.3"
+		"ytdl-core": "github:fent/node-ytdl-core#master"
 	},
 	"scripts": {
 		"start": "node bot.js",
