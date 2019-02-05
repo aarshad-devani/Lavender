@@ -9,13 +9,21 @@ module.exports = {
         if (!voiceChannel) {
             return message.reply("Please get in a voice channel so I can blast the good vibes!");
         }
-        voiceChannel.join().then(connection => {
+        voiceChannel.join().then(function(connection) {
             const stream = ytdl(url, { filter: "audioonly" });
             const dispatcher = connection.playStream(stream, streamOptions);
+            connection.on('error', (err) => {
+                console.log("An error occurred! | ", err);
+            });
+            connection.on('disconnected', (err) => {
+                console.log("Lavender seems to have unplugged something on accident! | ", err);
+            });
             dispatcher.on("end", end => {
                 voiceChannel.leave();
             });
-        }).catch(err => console.log(err));
+        }).catch(function(err) {
+            console.log(err);
+        });
     },
 
     help: {

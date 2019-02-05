@@ -15,7 +15,7 @@
 		"opusscript": "^0.0.6",
 		"soundcloud": "^3.3.0",
 		"uws": "^99.0.0",
-		"ytdl-core": "github:fent/node-ytdl-core#master"
+		"ytdl-core": "github:fent/node-ytdl-core#v0.28.3"
 	},
 	"scripts": {
 		"start": "node bot.js",
@@ -25,7 +25,7 @@
 		"type": "git",
 		"url": "git+https://github.com/KnoxDevTeam/Lavender.git"
 	},
-	"author": "Incrested & Ultra03",
+	"author": "doamatto & Ultra03",
 	"bugs": {
 		"url": "https://github.com/KnoxDevTeam/Lavender/issues"
 	},
