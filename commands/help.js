@@ -1,4 +1,4 @@
-const config = require("../config.json");
+const config = require('../config.json');
 module.exports = {
     run: function (client, message, args) {
         message.channel.send({
@@ -10,64 +10,64 @@ module.exports = {
                 },
                 title: "Lavender - Commands",
                 url: "https://docs.knoxcorp.me/lavender/",
-                description: `Lavender's commands are as follows. The command prefix is ${config.prefix}.`,
+                description: `Lavender has a large slur of commands to use. For an always up-to-date list and the usages of some commands, click the link above to Lavender's documentation or go to https://docs.knoxcorp.me/laveder/commands.`,
                 fields: [
                     {
                         name: "" + config.prefix + "8ball",
-                        value: "It's an 8ball..."
-                    },
-                    {
-                        name: "" + config.prefix + "help," + config.prefix + "h, " + config.prefix + "cmds",
-                        value: "See the commands that Lavender understands"
-                    },
-                    {
+                        value: "It's an Eight-Ball..."
+                    },{
+                        name: "" + config.prefix + "about",
+                        value: "Learn a Little Bit About Lavender",
+                    },{
+                        name: "" + config.prefix + "ban",
+                        value: "Ban a user",
+                    },{
+                        name: "" + config.prefix + "botisdead",
+                        value: "Can the bot work but is offline? Use this."
+                    },{
+                        name: "" + config.prefix + "cmds",
+                        value: "See the commands that Lavender understands."
+                    },{
+                        name: "" + config.prefix + "crypto",
+                        value: "Get a crypto's price and info"
+                    },{
+                        name: "" + config.prefix + "ding",
+                        value: "Dong!"
+                    },{
+                        name: "" + config.prefix + "h",
+                        value: "See the commands that Lavender understands."
+                    },{                        
+                        name: "" + config.prefix + "help",
+                        value: "See the commands that Lavender understands."
+                    },{
+                        name: "" + config.prefix + "hug",
+                        value: "Hug a person"
+                    },{
                         name: "" + config.prefix + "icup",
                         value: "I C U P"
-                    },
-                    {
-                        name: "" + config.prefix + "about",
-                        value: "Learn about Lavender"
-                    },
-                    {
-                        name: "" + config.prefix + "google",
-                        value: "Google what's after the command"
-                    },
-                    {
-                        name: "" + config.prefix + "pocketmonster",
-                        value: "Search the Pocket Monster Directory"
-                    },
-                    {
-                        name: "" + config.prefix + "tf," + config.prefix + "uf",
-                        value: "Animate a tableflip and un-flipping a table"
-                    },
-                    {
-                        name: "" + config.prefix + "botisdead",
-                        value: "Get a Link to the Lavender status page"
-                    },
-                    {
-                        name: "" + config.prefix + "ping," + config.prefix + "ding",
-                        value: "Get your ping, or just ding"
-                    },
-                    {
-                        name: "" + config.prefix + "join",
-                        value: "Join the Current Voice Channel"
-                    },
-                    {
-                        name: "" + config.prefix + "add",
-                        value: "Add to the Queue"
-                    },
-                    {
-                        name: "" + config.prefix + "queue",
-                        value: "See the Queue"
-                    },
-                    {
-                        name: "" + config.prefix + "play",
-                        value: "Play a song from YouTube"
-                    },
-                    {
-                        name: "" + config.prefix + "crypto",
-                        value: "Add a space and add the crypto abbreviation"
-                    }],
+                    },{
+                        name: "" + config.prefix + "kick",
+                        value: "Kick a person"
+                    }, {                        
+                        name: "" + config.prefix + "pfp",
+                        value: "Get someone's profile picture"
+                    }, {
+                        name: "" + config.prefix + "ping",
+                        value: "Get your ping"
+                    }, {
+                        name: "" + config.prefix + "search",
+                        value: "DuckDuckGo what's after the command"
+                    }, {
+                        name: "" + config.prefix + "tempban",
+                        value: "Temporarily ban a person"
+                    }, {
+                        name: "" + config.prefix + "tf",
+                        value: "Animate a tableflip"
+                    }, {
+                        name: "" + config.prefix + "uf",
+                        value: "Animate a table being unflipped"
+                    }
+                ],
                 timestamp: new Date(),
                 footer: {
                     icon_url: client.user.avatarURL,
@@ -80,4 +80,4 @@ module.exports = {
     help: {
         name: "help"
     }
-};
+}
