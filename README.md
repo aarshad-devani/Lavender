@@ -1,12 +1,12 @@
-![Lavender Banner](img/banner.jpg)
-(formerly Miku-Chan)
+#Lavender
+###A Fun, Customizable Discord Bot Made by Discord Lovers for Discord Lovers
 <div align="center">
 	<p>	
     <a class="badge-align" href="https://www.codacy.com/app/KnoxCorp/Lavender?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KnoxDevTeam/Lavender&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/8d6c96634d3e4bc4b5bb0933ce383d46"/></a><a class="badge" href="http://david-dm.org/knoxdevteam/lavender" data-reactid="26"><img src="http://david-dm.org/knoxdevteam/lavender/status.svg" alt="dependencies status" data-reactid="27"></a><a href="https://travis-ci.org/KnoxDevTeam/Lavender"><img src="https://travis-ci.org/KnoxDevTeam/Lavender.svg?branch=master" /></a><a href="https://discord.gg/MaK7BtW"><img src="https://discordapp.com/api/guilds/366247860502659084/embed.png" alt="Discord server" /></a>
 	</p>
 </div>
 
-Lavender is a Discord.JS-based bot that allows 3 things: easy moderation, boat-loads of fun, and lightweight self-deployment.
+Lavender is a fun, customizable Discord bot developed by Knox, Corp. It includes everything you'd need from moderation tools to fun little gadgets that'll pass the time.
 
 # Table of Contents
 > [Key Features](#key-features)
