@@ -10,15 +10,15 @@ module.exports = {
                 },
                 title: "Lavender",
                 url: "https://lavender.mikuchan.me",
-                description: "Lavender is a Discord.JS-based bot made by Matt (Incrested) and Lucas (Ultra03), which is now owned by Knox. Before a rebrand, it was actually called Miku-Chan!",
+                description: "Lavender is a fun, customizable Discord bot developed by Knox, Corp. It includes everything you'd need from moderation tools to fun little gadgets that'll pass the time. Before a rebrand, it was actually called Miku-Chan!",
                 fields: [{
-                    name: "Some commands",
-                    value: "You can do " + config.prefix + "help to easily open the commands list."
+                    name: "What Can You Do?",
+                    value: "You can do `" + config.prefix + "help` to easily open the commands list and see some cool tricks up Lavender's sleeve."
                 }, {
                     name: "Source Code",
                     value: "Curious on how Lavender was made? View the source code at https://github.com/KnoxDevTeam/Lavender"
                 }, {
-                    name: "Acknowledgments",
+                    name: "Acknowledgements",
                     value: "We love to acknowledge the people who helped aid our development. You can see the list of people on the 'README' file on the GitHub link above."
                 }],
                 timestamp: new Date(),
