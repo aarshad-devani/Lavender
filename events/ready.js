@@ -23,7 +23,7 @@ module.exports.run = (client) => {
         console.log("Updated server amount.");
     });
     console.log("Presence scheduler enabled.");
-    console.log("You are currently using version 1.1.2-rc. A fair warning that this is a development build and not meant for production. Use at your own \"risk\"");
+    console.log("You are currently using version 2.1-b. A fair warning that this is a development build and not meant for production. Use at your own \"risk\"");
     console.log("-------");
     if(config.useDbots) {
         const dbl = new DBL(config.dbotsToken1, client);
@@ -39,7 +39,7 @@ module.exports.run = (client) => {
                 shard_id: 0,
                 guilds: client.guilds.size,
                 users: client.users.size,
-                voice_connections: client.voiceConnactions.size
+                voice_connections: client.voiceConnections.size
             }).catch(r => console.log('[discordbotlist.com] Failed POST'));
         }, 3600000);
         dbl.on('posted', () => {
