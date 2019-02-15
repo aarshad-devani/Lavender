@@ -32,7 +32,7 @@ Lavender couldn't have been done without support for roughly 1 year now. The hea
 
 The Lavender code is licensed under GNU General Public License v3 and developed in full by Matt and Lucas.
 
-The Lavender logo, banner, and other graphics are property of Knox, Corp. &copy; 2018 Knox, Corp. Some rights reserved. The logo and banner was developed by employee, Lucky.
+The Lavender logo, banner, and other graphics are property of Knox, Corp. &copy; 2018-2019 Knox, Corp. Some rights reserved. The logo and banner was developed by employee, Lucky.
 
 # Footnotes
 \* Of course, your results may vary.
