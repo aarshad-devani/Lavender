@@ -1,9 +1,4 @@
 <img src="img/banner.jpg" />
-<div align="center">
-	<p>	
-    <a class="badge-align" href="https://www.codacy.com/app/KnoxCorp/Lavender?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KnoxDevTeam/Lavender&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/8d6c96634d3e4bc4b5bb0933ce383d46"/></a><a class="badge" href="http://david-dm.org/knoxdevteam/lavender" data-reactid="26"><img src="http://david-dm.org/knoxdevteam/lavender/status.svg" alt="dependencies status" data-reactid="27"></a><a href="https://travis-ci.org/KnoxDevTeam/Lavender"><img src="https://travis-ci.org/KnoxDevTeam/Lavender.svg?branch=master" /></a><a href="https://discord.gg/MaK7BtW"><img src="https://discordapp.com/api/guilds/366247860502659084/embed.png" alt="Discord server" /></a>
-	</p>
-</div>
 
 Lavender is a fun, customizable Discord bot developed by Knox, Corp. It includes everything you'd need from moderation tools to fun little gadgets that'll pass the time.
 
