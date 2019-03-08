@@ -1,5 +1,4 @@
-#Lavender
-###A Fun, Customizable Discord Bot Made by Discord Lovers for Discord Lovers
+<img src="img/banner.jpg" />
 <div align="center">
 	<p>	
     <a class="badge-align" href="https://www.codacy.com/app/KnoxCorp/Lavender?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=KnoxDevTeam/Lavender&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/8d6c96634d3e4bc4b5bb0933ce383d46"/></a><a class="badge" href="http://david-dm.org/knoxdevteam/lavender" data-reactid="26"><img src="http://david-dm.org/knoxdevteam/lavender/status.svg" alt="dependencies status" data-reactid="27"></a><a href="https://travis-ci.org/KnoxDevTeam/Lavender"><img src="https://travis-ci.org/KnoxDevTeam/Lavender.svg?branch=master" /></a><a href="https://discord.gg/MaK7BtW"><img src="https://discordapp.com/api/guilds/366247860502659084/embed.png" alt="Discord server" /></a>
@@ -32,7 +31,7 @@ Lavender couldn't have been done without support for roughly 1 year now. The hea
 
 The Lavender code is licensed under GNU General Public License v3 and developed in full by Matt and Lucas.
 
-The Lavender logo, banner, and other graphics are property of Knox, Corp. &copy; 2018 Knox, Corp. Some rights reserved. The logo and banner was developed by employee, Lucky.
+The Lavender logo, banner, and other graphics are property of Knox, Corp. &copy; 2018-2019 Knox, Corp. Some rights reserved. The logo and banner was developed by employee, Lucky.
 
 # Footnotes
 \* Of course, your results may vary.
