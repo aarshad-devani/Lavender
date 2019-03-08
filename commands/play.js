@@ -1,7 +1,7 @@
 const config = require("../config.json");
 const ytdl = require("ytdl-core");
 module.exports = {
-    run: function (client, message, args, ytdl) {
+    run: function (client, message, args) {
         console.log("Got a song request!");
         const streamOptions = { seek: 0, volume: 1};
         const voiceChannel = message.member.voiceChannel;
@@ -24,6 +24,8 @@ module.exports = {
         }).catch(function(err) {
             console.log(err);
         });
+
+        
     },
 
     help: {
