@@ -22,7 +22,7 @@ module.exports.run = (client) => {
         client.user.setActivity(`${config.prefix}help | ${client.guilds.size} servers`);
         console.log("Updated server amount.");
     });
-    console.log("Presence scheduler enabled.");
+    console.log("Presence Scheduler enabled.");
     console.log("You are currently using version 2.1-b. A fair warning that this is a development build and not meant for production. Use at your own \"risk\"");
     console.log("-------");
     if(config.useDbots) {
@@ -49,4 +49,4 @@ module.exports.run = (client) => {
             console.log(`Oops! ${e}`);
         });
     } 
-}
+};
