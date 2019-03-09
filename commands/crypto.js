@@ -15,7 +15,7 @@ module.exports = {
                 var data = JSON.parse(body);
                 var priceUSD = data.PRICE;
             });
-        }
+        });
 
         /*  The Above Will Be Used.. soon™ */
         /* Warning: Horrible Code Above */
