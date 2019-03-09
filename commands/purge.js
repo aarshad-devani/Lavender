@@ -12,7 +12,7 @@ module.exports = {
     }
     const fetched = message.channel.fetchMessages({limit: deleteCount});
     message.channel.bulkDelete(fetched).catch(err => {
-        message.reply("Something went wrong! The Ghost Busters are on the case!")
+        message.reply("Something went wrong! The Ghost Busters are on the case!");
         console.error(`Couldn't delete some messages because ${error}`);
     });
   },

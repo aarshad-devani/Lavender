@@ -1,4 +1,4 @@
-const https = require('https');
+const https = require("https");
 module.exports = {
     run: function (client, message, args) {
         if(args.length <= 0) {

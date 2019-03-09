@@ -6,5 +6,5 @@ module.exports.run = (client, member) => {
         const inviter = client.users.get(invite.inviter.id);
         const logs = member.guild.channels.find(channel => channel.name === "join-logs");
         logs.send(`${member.user.tag} joined using the invite code ${invite.code} made by ${inviter.tag}. This invite code has been used ${invite.uses}.`);
-    })
-}
+    });
+};
