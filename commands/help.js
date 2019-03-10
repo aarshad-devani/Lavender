@@ -43,6 +43,9 @@ module.exports = {
                         name: "" + config.prefix + "hug",
                         value: "Hug a person"
                     },{
+                        name: "" + config.prefix + "invite",
+                        value: "Get a link to invite others to Lavender."
+                    },{
                         name: "" + config.prefix + "icup",
                         value: "I C U P"
                     },{
