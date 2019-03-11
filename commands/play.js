@@ -16,10 +16,10 @@ module.exports = {
             const stream = ytdl(url, { filter: "audioonly" });
             const dispatcher = connection.playStream(stream, streamOptions);
             connection.on('error', (err) => {
-                console.log("An error occurred! | ", err);
+                console.log(`An error occurred! | ${err}`);
             });
             connection.on('disconnected', (err) => {
-                console.log("Lavender seems to have unplugged something on accident! | ", err);
+                console.log(`Lavender seems to have unplugged something on accident! | ${err}`;
             });
             dispatcher.on("end", end => {
                 voiceChannel.leave();
