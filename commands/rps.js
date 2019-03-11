@@ -33,6 +33,9 @@ module.exports = {
                 return;
             }
         });
+        collector.on('end', message => {
+            return;
+        });
         
     },
     help: {
