@@ -1,6 +1,6 @@
 module.exports = {
     run: function (client, message, args) {
-        const [member, duration, reason] = message.args;
+        var [member, duration, reason] = message.args;
         if(!member.bannable) {
             message.reply(`${member.user.tag} is too powerful for me to beat!`);
         } 
