@@ -6,6 +6,7 @@
 	"main": "bot.js",
 	"dependencies": {
 		"dblapi.js": "^2.3.0",
+		"ddblapi.js": "0.0.8",
 		"discord.js": "^11.4.2",
 		"erlpack": "discordapp/erlpack",
 		"ffmpeg-binaries": "^4.0.0",
