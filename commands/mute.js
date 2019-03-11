@@ -2,16 +2,16 @@ module.exports = {
     run: function(client, message, args) {
       let member = message.mentions.members.first();
       let reason = args.slice(1).join(" ");
-        if(!message.member.hasPermission("MANAGE_ROLES")) {
-          message.reply("You don't have the permission '**MANAGE_MESSAGES**'");
+        if(!message.member.hasPermission("MANAGE_CHANNELS")) {
+          message.reply("You don't have the permission '**MANAGE_CHANNELS**'");
           return;
         }
         if(message.mentions.members.size === 0) {
           message.reply("Please mention a user to mute.");
           return;
         }
-        if(!message.guild.me.hasPermission("MANAGE_ROLES")) {
-          message.reply("I can't manage messages, therefore");
+        if(!message.guild.me.hasPermission("MANAGE_CHANNELS")) {
+          message.reply("I can't manage channels, therefore");
           return;
         }
         if(message.member.roles.highest.position <= member.roles.highest.position) {

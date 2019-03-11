@@ -2,15 +2,15 @@ module.exports = {
     run: function(client, message, args) {
       let member = message.mentions.members.first();
       let reason = args.slice(1).join(" ");
-        if(!message.member.hasPermission("MANAGE_ROLES")) {
-          message.reply("You don't have the permission '**MANAGE_MESSAGES**'");
+        if(!message.member.hasPermission("MANAGE_CHANNELS")) {
+          message.reply("You don't have the permission '**MANAGE_CHANNELS**'");
           return;
         }
         if(message.mentions.members.size === 0) {
           message.reply("Please mention a user to unmute.");
           return;
         }
-        if(!message.guild.me.hasPermission("MANAGE_ROLES")) {
+        if(!message.guild.me.hasPermission("MANAGE_CHANNELS")) {
           message.reply("I can't manage messages, therefore");
           return;
         }
