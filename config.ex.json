@@ -1,6 +1,5 @@
 {
-	"token": "inserthere",
-	"prefix": "+",
+	"prefix": "[",
 	"passes": "1",
 	"useDbots": false,
 	"dbotsToken3": "inserthere",
