@@ -6,7 +6,7 @@ module.exports = {
         var cPick = cOptions[Math.floor(Math.random() * cOptions.length)];
         let txt = "Alright, let's play. Rock, paper, or scissors?";
 
-        message.channel.send(messsage.author, txt);
+        message.channel.send(message.author, txt);
         const resp = message.channel.collectMessage(message.author);
         var str = resp.content.toUpperCase();
         var str2;
