@@ -9,6 +9,9 @@ module.exports = {
         if (!voiceChannel) {
             return message.reply("Please get in a voice channel so I can blast the good vibes!");
         }
+        if(!url) {
+            return message.reply("I need a song to play.");
+        }
         voiceChannel.join().then(function(connection) {
             const stream = ytdl(url, { filter: "audioonly" });
             const dispatcher = connection.playStream(stream, streamOptions);
