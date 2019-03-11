@@ -5,18 +5,10 @@ const DDBL = require("ddblapi.js");
 const info = require("../package.json");
 const scheduler = require("node-schedule");
 
-const invites = {};
-
 const wait = require("util").promisify(setTimeout);
 
 module.exports.run = (client) => {
-    wait(1000);
-    client.guilds.forEach(g => {
-        g.fetchInvites().then(guildInvites => {
-            invites[g.id] = guildInvites;
-        });
-    });
-    
+    console.log("-------");
     console.log(`Logged in as ${client.user.username}`);
     client.user.setActivity(`${config.prefix}help | ${client.guilds.size} servers`);
     console.log("Presence Changed Successfully.");
