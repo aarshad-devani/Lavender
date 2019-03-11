@@ -5,18 +5,28 @@ module.exports = {
             return message.channel.send("Whoops! You need to tell me which cryptocurrency you want to look up.");
         }
         var crypto0 = args[0];
-        var crypto1 = crypto0.toUpperCase();
-        https.get("https://min-api.cryptocompare.com/data/pricemultifull?fsym=" + crypto + "&tsyms=USD", function (res) {
+        https.get(`https://api.cryptonator.com/api/ticker/${crypto}-usd` , function(res) {
             var body = "";
             res.on("data", function (chunk) {
                 body += chunk;
             });
             res.on("end", function() {
                 var data = JSON.parse(body);
-                var priceUSD = data.PRICE;
+                var priceUSD = data.ticker.price;
+                var abbrv = data.ticker.base;
+            });
+            res.on("error", function(err) {
+                console.error(err);
+                message.channel.send("Something went wrong while doing this.");
             });
         });
-
+        
+        message.channel.send({
+            embed: {
+                
+            }
+        });
+        
         /*  The Above Will Be Used.. soon™ */
         /* Warning: Horrible Code Above */
         switch (currency) {
