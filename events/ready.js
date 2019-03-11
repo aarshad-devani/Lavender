@@ -2,6 +2,7 @@ const config = require("../config.json");
 const snekfetch = require("snekfetch");
 const DBL = require("dblapi.js");
 const DDBL = require("ddblapi.js");
+const info = require("../package.json");
 const scheduler = require("node-schedule");
 
 const invites = {};
@@ -24,7 +25,7 @@ module.exports.run = (client) => {
         console.log("Updated server amount.");
     });
     console.log("Presence Scheduler enabled.");
-    console.log("You are currently using version 2.1-b. A fair warning that this is a development build and not meant for production. Use at your own \"risk\"");
+    console.log(`You are currently using version ${info.version}. A fair warning that this is a development build and not meant for production. Deploy at your own risk.`);
     console.log("-------");
     if(config.useDbots) {
         const ddbl = new DDBL(config.dbotsToken3);
