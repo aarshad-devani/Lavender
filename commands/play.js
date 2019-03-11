@@ -11,8 +11,8 @@ module.exports = {
         if(!url) {
             return message.reply("I need a song to play.");
         }
-        if(!url.startsWith() === "https://www.youtube.com" || !url.startsWith() === "http://www.youtube.com" || !url.startsWith() === "https://youtube.com" || !url.startsWith() === "http://youtube.com") {
-            url2 = "https://youtube.com/" + url;
+        if(!url.startsWith() === "https://www.youtube.com/?watch?v=" || !url.startsWith() === "http://www.youtube.com/?watch?v=" || !url.startsWith() === "https://youtube.com/?watch?v=" || !url.startsWith() === "http://youtube.com/?watch?v=") {
+            url2 = "https://youtube.com/?watch?v=" + url;
         } else {
             url2 = url;
         }
