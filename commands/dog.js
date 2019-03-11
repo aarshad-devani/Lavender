@@ -11,6 +11,6 @@ module.exports = {
         }));
     },
     help: {
-        name: "hug"
+        name: "dog"
     }
 };

@@ -27,6 +27,6 @@ module.exports = {
         }
     },
     help: {
-        name: "hug"
+        name: "mute"
     }
 };
