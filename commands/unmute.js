@@ -1,6 +1,7 @@
 module.exports = {
     run: function(client, message, args) {
-        var [member, duration] = message.args;
+      let member = message.mentions.members.first();
+      let reason = args.slice(1).join(" ");
         if(!message.member.hasPermission("MANAGE_ROLES")) {
           message.reply("You don't have the permission '**MANAGE_MESSAGES**'");
           return;
