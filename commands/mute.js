@@ -16,10 +16,13 @@ module.exports = {
         if(message.member.roles.highest.position <= member.roles.highest.position) {
             message.reply(`${member.user.tag} is too powerful for you to mute them.`);
         }
-        member.permissions.remove("SEND_MESSAGES").catch(err => {
-            message.channel.send("Seems I couldn't mute them. Weird.");
-            return console.error(err);
-        });
+        channel.replacePermissionOverwrites({
+            overwrites: [{
+                id: member,
+                denied: ['SEND_MESSAGES'],
+            }],
+            reason: reason
+        }).catch(err => { return console.log(err) });
         if(reason === "" || reason === " ") {
             message.channel.send(`${member} was muted by ${message.author.tag}. No reason specified.`);
         } else {
