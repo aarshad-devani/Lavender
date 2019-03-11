@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 module.exports = {
     run: function(client, message, args) {
+        message.channel.send("This command is currently under quarrentine due to its ability to crash the bot completely. We'll update you on when this command is back up on GitHub.");
+        /*
         var cOptions = ["r","p","s"];
         var options = ["rock", "r", "paper", "p", "scissors", "s"];
         var cPick = cOptions[Math.floor(Math.random() * cOptions.length)];
@@ -33,6 +35,7 @@ module.exports = {
             message.channel.send("Uhh... I'mma just back out of the room now.. uh.. bye.");
             return;
         }        
+        */
     },
     help: {
         name: "rps"
