@@ -20,7 +20,8 @@ module.exports = {
         let txt = `Are you sure you want to tempban ${member.user.tag}?`;
         const m = message.channel.reply(message.author, txt);
         const failsafe = message.channel.collectMessage(message.author);
-        if(!failsafe) {
+        let resp = failsafe.toUpperCase();
+        if(resp === "NO" || resp === "N") {
             m.edit("**Aborted.**", {embed: null});
         } else {
             m.edit(`**Tempbanning ${member.user.tag}...`, {embed: null});
