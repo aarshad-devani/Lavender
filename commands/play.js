@@ -19,7 +19,7 @@ module.exports = {
                 console.log(`An error occurred! | ${err}`);
             });
             connection.on('disconnected', (err) => {
-                console.log(`Lavender seems to have unplugged something on accident! | ${err}`;
+                console.log(`Lavender seems to have unplugged something on accident! | ${err}`);
             });
             dispatcher.on("end", end => {
                 voiceChannel.leave();
