@@ -20,8 +20,10 @@ module.exports = {
             overwrites: [{
                 id: member,
                 allowed: ['SEND_MESSAGES'],
-            }];
-        }).catch(err => { return console.log(err) });
+            }]
+        }).catch(err => {
+           return console.log(err);
+        });
         message.channel.send(`${member} was unmuted by ${message.author.tag}.`);
     },
     help: {

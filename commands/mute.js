@@ -22,7 +22,9 @@ module.exports = {
                 denied: ['SEND_MESSAGES'],
             }],
             reason: reason
-        }).catch(err => { return console.log(err) });
+        }).catch(err => {
+            return console.log(err);
+        });
         if(reason === "" || reason === " ") {
             message.channel.send(`${member} was muted by ${message.author.tag}. No reason specified.`);
         } else {
