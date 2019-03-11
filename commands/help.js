@@ -56,7 +56,7 @@ module.exports = {
                         value: "Get someone's profile picture"
                     }, {
                         name: "" + config.prefix + "ping",
-                        value: "Get your ping"
+                        value: "Get Lavender's server ping"
                     }, {
                         name: "" + config.prefix + "search",
                         value: "DuckDuckGo what's after the command"
