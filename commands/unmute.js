@@ -14,9 +14,6 @@ module.exports = {
           message.reply("I can't manage messages, therefore");
           return;
         }
-        if(message.member.roles.highest.position <= member.roles.highest.position) {
-            message.reply(`${member.user.tag} is too powerful for you to unmute them.`);
-        }
         channel.replacePermissionOverwrites({
             overwrites: [{
                 id: member,
