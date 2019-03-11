@@ -14,7 +14,7 @@ module.exports = {
           message.reply("I can't manage messages, therefore");
           return;
         }
-        channel.replacePermissionOverwrites({
+        message.channel.replacePermissionOverwrites({
             overwrites: [{
                 id: member,
                 allowed: ['SEND_MESSAGES'],
