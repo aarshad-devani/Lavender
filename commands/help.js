@@ -6,7 +6,7 @@ module.exports = {
                 color: 3447003,
                 author: {
                     name: client.user.username,
-                    icon_url: client.user.avatartURl
+                    icon_url: client.user.avatarURl
                 },
                 title: "Lavender - Commands",
                 url: "https://docs.knoxcorp.me/lavender/",
