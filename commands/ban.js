@@ -15,6 +15,7 @@ module.exports = {
     let member = message.mentions.members.first();
     if(!member.bannable) {
       message.reply("I can't kick that member! Do they have a higher role?");
+      return;
     }
     let reason = args.slice(1).join(" ");
     let bannedName = member.user.username;
@@ -25,9 +26,9 @@ module.exports = {
       return console.error(error);
     });
     if(reason === "" || reason === " ") {
-      message.channel.send(`${bannedName}#${bannedDiscriminator} was banned by ${message.author.tag}. No reason specified.`);
+      return message.channel.send(`${bannedName}#${bannedDiscriminator} was banned by ${message.author.tag}. No reason specified.`);
     } else {
-      message.channel.send(`${bannedName}#${bannedDiscriminator} was banned by ${message.author.tag} for ${reason}`);
+      return message.channel.send(`${bannedName}#${bannedDiscriminator} was banned by ${message.author.tag} for ${reason}`);
     }
   },
 
