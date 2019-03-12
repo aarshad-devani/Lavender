@@ -5,7 +5,7 @@ module.exports = {
         if (message.mentions.users.size < 1) {
             message.channel.send("You can't hug nobody.");
             return;
-        } else if (message.mentions.user.first() === message.author) {
+        } else if (message.mentions.users.first() === message.author) {
             message.channel.send("You can't hug yourself.");
             return;
         } else if (message.mentions.users.size > 1) {
