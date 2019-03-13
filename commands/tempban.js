@@ -19,7 +19,7 @@ module.exports = {
           return;
         }
         let txt = `Are you sure you want to tempban ${member.user.tag}?`;
-        const m = message.channel.send(message.author, txt);
+        message.channel.send(`Are you sure you want to tempban ${member.user.tag}?`, message.author);
         const failsafe = message.channel.collectMessage(message.author);
         let resp = failsafe.toUpperCase();
         if(resp === "NO" || resp === "N") {
