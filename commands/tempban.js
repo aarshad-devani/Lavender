@@ -18,7 +18,6 @@ module.exports = {
           message.reply("I don't have permission to ban members!");
           return;
         }
-        if(message.member.roles.highest.position <= member.roles.highest.position) return message.reply(`${member.user.tag} is too powerful for you to temporarily beat 'em.`);
         let txt = `Are you sure you want to tempban ${member.user.tag}?`;
         const m = message.channel.reply(message.author, txt);
         const failsafe = message.channel.collectMessage(message.author);
