@@ -1,7 +1,7 @@
 module.exports = {
   run: function (client, message, args) {
-    var ping = new Date().getTime() - message.createdTimestamp + " ms";
-    message.channel.send("Pong! The last ping was " + client.ping + " ms.");
+    var ping = Math.round(client.ping);
+    message.channel.send("Pong! The last ping was " + ping + " ms.");
   },
   help: {
     name: "ping"
