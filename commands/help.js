@@ -10,7 +10,7 @@ module.exports = {
                 },
                 title: "Lavender - Commands",
                 url: "https://docs.knoxcorp.me/lavender/",
-                description: "Lavender has a large slur of commands to use. For an always up-to-date list and the usages of some commands, click the link above to Lavender's documentation or go to https://docs.knoxcorp.me/laveder/commands.",
+                description: "Lavender has a large slur of commands to use. For an always up-to-date list and the usages of some commands, click the link above to Lavender's documentation or go to https://docs.knoxcorp.me/lavender/commands.",
                 fields: [
                     {
                         name: "" + config.prefix + "8ball",
