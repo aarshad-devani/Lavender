@@ -9,7 +9,7 @@ module.exports = {
                     icon_url: client.user.avatarURL
                 },
                 title: "Lavender",
-                url: "https://lavender.mikuchan.me",
+                url: "https://lavender.knoxcorp.me",
                 description: "Lavender is a fun, customizable Discord bot developed by Knox, Corp. It includes everything you'd need from moderation tools to fun little gadgets that'll pass the time. Before a rebrand, it was actually called Miku-Chan!",
                 fields: [{
                     name: "What Can You Do?",
